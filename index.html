@@ -1,0 +1,123 @@
+<!DOCTYPE>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+	  <div class="navbar">
+	  	<div class="container1">
+	  		<a class="logo" href="#">Remember<span>That</span></a>
+
+			<img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="Open Navigation">
+
+			<nav>
+			  <img id="mobile-exit" class="mobile-menu-exit" src="exit.svg" alt="Close Navigation">
+				<ul class="primary-nav">
+					<li class="current"><a class="an" href="#">Home</a></li>
+					<li><a class="an" href="#">Features</a></li>
+					<li><a class="an" href="#">Pricing</a></li>
+				</ul>
+
+				<ul class="secondary-nav">
+					<li><a class="an" href="#">Contact</a></li>
+					<li class="go-premium-cta"><a class="an" href="#">Go Premium</a></li>
+				</ul>
+			</nav>
+	  	</div>
+	  </div>
+
+	  <section class="hero">
+	  	<div class="container">
+	  		<div class="left-col">
+			  <p class="subhead">It's Nitty &amp; Gritty</p>
+			  <h1>A Task App That Doesn't Stink</h1>
+			  <div class="hero-cta">
+			  	<a href="#" class="primary-cta">Try for free</a>
+				<a href="#" class="watch-video-cta"><img src="watch.svg" alt="Watch a video">Watch a video</a>
+			  </div>
+	  		</div>
+			<img src="illustration.svg" class="hero-img" alt="Illustration">
+	  	</div>
+	  </section>
+
+	  <section class="features-section">
+	  	<div class="container">
+	  		<ul class="features-list">
+	  			<li class="lif">Unlimited Tasks</li>
+	  			<li class="lif">SMS Task Reminders</li>
+	  			<li class="lif">Confetti Explosions upon Task Completions</li>
+	  			<li class="lif">Social Media Announcements</li>
+	  			<li class="lif">Real Time Collaboration</li>
+	  			<li class="lif">Other awesome features</li>
+	  		</ul>
+			<img src="holding-phone.jpg" alt="Man holding phone">
+	  	</div>
+	  </section>
+
+	  <section class="testimonials-section">
+	  	<div class="container">
+	  		<ul>
+			  <li class="lit">
+			    <img class="imgt" src="Avatar.jpg" alt="lyj's avatar">
+			    <blockquote>
+				    More features will come out with your support!
+			    </blockquote>
+			    <cite>-lyj</cite>
+			  </li>
+			  <li class="lit">
+			    <img class="imgt" src="Avatar.jpg" alt="lyj's avatar">
+			    <blockquote>
+				    This UI already support both mobile and PC, just zoom in and out to see the effects!
+			    </blockquote>
+			    <cite>-lyj</cite>
+			  </li>
+			  <li class="lit">
+			    <img class="imgt" src="Avatar.jpg" alt="lyj's avatar">
+			    <blockquote>
+				    Waiting for upgrading...
+			    </blockquote>
+			    <cite>-lyj</cite>
+			  </li>
+	  		</ul>
+	  	</div>
+	  </section>
+
+	  <section class="contact-section">
+	  	<div class="container">
+	  		<div class="contact-left">
+	  			<h2>Contact</h2>
+
+				<form action="">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name">
+
+					<label for="message">Message</label>
+					<textarea rows="10" cols="30" name="message" id="message"></textarea>
+
+					<input type="submit" class="send-message-cta" value="Send message">
+				</form>
+	  		</div>
+
+			<div class="contact-right">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7969.876602588245!2d101.7047993!3d2.8341061000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdc77dffa92899%3A0x25b5e828613a7db9!2sXiamen%20University%20Malaysia!5e0!3m2!1sen!2smy!4v1696880905273!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>		
+			</div>
+
+	  	</div>
+	  </section>
+
+	  <script>
+	  	const mobileBtn=document.getElementById('mobile-cta')
+		nav=document.querySelector('nav')
+		mobileBtnExit=document.getElementById('mobile-exit');
+		mobileBtn.addEventListener('click',()=>{
+			nav.classList.add('menu-btn');
+		})
+		mobileBtnExit.addEventListener('click',()=>{
+			nav.classList.remove('menu-btn');
+		})
+	  </script>
+	</body>
+</html>
